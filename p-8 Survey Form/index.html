@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Survey Form</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f2f2f2;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      /* height: 100vh; */
+    }
+    .container {
+      background-color: #fff;
+      padding: 30px;
+      border-radius: 10px;
+      width: 400px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+    h1 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    label {
+      display: block;
+      margin-top: 15px;
+      font-weight: bold;
+    }
+    input[type="text"],
+    input[type="email"],
+    textarea,
+    select {
+      width: 100%;
+      padding: 10px;
+      margin-top: 5px;
+      box-sizing: border-box;
+      border-radius: 5px;
+      border: 1px solid #978383;
+    }
+    .radio-group,
+    .checkbox-group {
+      margin-top: 10px;
+    }
+    .radio-group label,
+    .checkbox-group label {
+      font-weight: normal;
+      margin-right: 15px;
+    }
+    .submit-btn {
+      margin-top: 20px;
+      width: 100%;
+      
+      padding: 10px;
+      background-color: #0a66c2;
+      color: white;
+      font-size: 16px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    .submit-btn:hover {
+      background-color: #004a99;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Survey Form</h1>
+    <form>
+      <label for="name">Name</label>
+      <input type="text" id="name" name="name">
+
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email">
+
+      <label for="feedback">Feedback</label>
+      <textarea id="feedback" name="feedback" rows="3"></textarea>
+
+      <label>Rate your experience:</label>
+      <div class="radio-group">
+        <label><input type="radio" name="experience" value="excellent"> Excellent</label>
+        <label><input type="radio" name="experience" value="good"> Good</label>
+        <label><input type="radio" name="experience" value="fair"> Fair</label>
+        <label><input type="radio" name="experience" value="poor"> Poor</label>
+      </div>
+
+      <label>What would you like to see improved?</label>
+      <div class="checkbox-group">
+        <label><input type="checkbox" name="improve" value="ui"> User Interface</label><br>
+        <label><input type="checkbox" name="improve" value="performance"> Performance</label><br>
+        <label><input type="checkbox" name="improve" value="feature"> Feature: <input type="text" name="other_text" style="width: 70%; display: inline-block;"></label><br>
+        <label><input type="checkbox" name="improve" value="other"> Other:
+          <input type="text" name="other_text" style="width: 70%; display: inline-block;">
+        </label>
+      </div>
+
+      <label for="source">Where did you hear about us?</label>
+      <select id="source" name="source">
+        <option value="">Select</option>
+        <option value="friend">Friend</option>
+        <option value="social">Social Media</option>
+        <option value="ads">Advertisements</option>
+        <option value="other">Other</option>
+      </select>
+
+      <button type="submit" class="submit-btn">Submit</button>
+    </form>
+  </div>
+</body>
+</html>

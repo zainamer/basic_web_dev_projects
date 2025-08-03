@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            display: flex;
+            
+
+        }
+        #message{
+            height: 50px;
+        }
+        .one,.two,.three{
+            display: flex;
+            flex-direction: column;
+        }
+        .container{
+            display: flex;
+            flex-direction: column;
+            width: 250px;
+            gap: 10px;
+            margin: 200px auto;
+            padding: 10px;
+            box-shadow: 4px 3px 10px;
+        }
+        button{
+            width: 60px;
+            background-color: gray;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Simple Contact Form</h2>
+        <div class="one">
+            <label for="name">Name</label>
+            <input id="name" type="text">
+        </div>
+        <div class="two">
+            <label for="email">Email</label>
+            <input id="email" type="text">
+        </div>
+        <div class="three">
+            <label for="message">Message</label>
+            <input id="message" type="text">
+        </div>
+        <button>submit</button>
+
+    </div>
+</body>
+</html>

@@ -1,0 +1,112 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    background-color: rgb(172, 171, 170);
+    min-height: 100vh;
+    border: 5px solid rgb(34, 0, 107);
+
+}
+
+.content{
+    max-width: 1200px;
+    margin: 20px 20%;
+    padding: 50px;
+    border: 5px solid rgb(21, 5, 93);
+
+}
+
+.top_section{
+    margin-top: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.info_section{
+    color: rgb(39, 8, 95);
+    margin-bottom: 30px;
+    margin-right: 40px;
+}
+ 
+.top_section h1:hover{
+    color: rgb(0, 0, 0);
+}
+
+.info_section h1{
+    font-family: 'Times New Roman', Times, serif;
+    text-align: end;
+    font-size: 60px;
+    font-weight: bolder;
+    text-transform: capitalize;
+}
+
+.info_section h4{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: end;
+    font-size: 30px;
+}
+img{
+    border-radius: 49%;
+    border: 5px solid black;
+    height: 350px;
+    width: 250px;
+}
+
+.mid_section{
+    margin-top: 60px;
+}
+
+.mid_section h1{
+    font-family: serif;
+    font-size: 50px;
+    font-weight: bold;
+    text-align: left;
+    text-transform: capitalize;
+    color: rgb(39, 8, 95);
+}
+
+.mid_section p{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 25px;
+    text-align: justify;
+    margin-top: 20px;
+    line-height: 1.2em;
+    letter-spacing:1.2px;
+}
+
+.biography_section h4{
+    color: rgb(39, 8,95);
+    margin-top: 60px;
+    font-family: serif;
+    font-size: 30px;
+    font-weight: bold;
+    text-align: left;
+    text-transform: capitalize;
+}
+
+.biography_section ul{
+    margin-left: 70px;
+}
+
+.biography_section li{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 25px;
+    text-align: justify;
+    margin-top: 20px;
+    line-height: 1.2em;
+    letter-spacing:1.2px;
+}
+
+footer{
+    margin: 80px 0;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-transform: capitalize;
+    font-size: 25px;
+    text-align: end;
+    line-height: 1.2em;
+    letter-spacing:1.2px;
+}
