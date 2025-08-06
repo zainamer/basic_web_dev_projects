@@ -1,0 +1,115 @@
+/* Reset and base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", sans-serif;
+}
+
+body {
+  height: 100vh;
+  background: linear-gradient(to bottom right, #1e3c72, #2a5298);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Container */
+.container {
+  width: 100%;
+  max-width: 500px;
+  padding: 20px;
+}
+
+/* To-Do Box */
+.todo-box {
+  background: white;
+  border-radius: 15px;
+  padding: 30px 25px;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.1);
+}
+
+.todo-box h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  font-weight: 600;
+  color: #1f1f1f;
+}
+
+/* Input section */
+.input-section {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.input-section input {
+  flex: 1;
+  padding: 12px 15px;
+  border: none;
+  border-radius: 25px 0 0 25px;
+  outline: none;
+  background: #f1f1f1;
+}
+
+.input-section button {
+  padding: 12px 25px;
+  border: none;
+  background: #ff5c33;
+  color: white;
+  font-weight: bold;
+  border-radius: 0 25px 25px 0;
+  cursor: pointer;
+}
+
+/* Task list */
+.task-list {
+  list-style: none;
+}
+
+.task-list li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 15px;
+  padding: 10px 0;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.task-list li p {
+  flex: 1;
+  margin-left: 10px;
+  font-size: 16px;
+  color: #333;
+}
+
+.circle {
+  width: 20px;
+  height: 20px;
+  border: 2px solid #ccc;
+  border-radius: 50%;
+}
+
+.checked {
+  background-color: #ff5c33;
+  color: white;
+  text-align: center;
+  font-size: 12px;
+  line-height: 20px;
+  border: none;
+}
+
+.strike {
+  text-decoration: line-through;
+  color: #888;
+}
+
+.delete {
+  color: #999;
+  font-size: 18px;
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+.completed {
+  opacity: 0.7;
+}

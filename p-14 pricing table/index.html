@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Pricing Table</title>
+  <style>
+    Base styles
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", sans-serif;
+  background: #311d79;
+  color: #fff;
+}
+
+/* Section wrapper */
+.pricing-section {
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.pricing-section h2 {
+  font-size: 32px;
+  margin-bottom: 40px;
+}
+
+/* Card container */
+.pricing-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+
+/* Pricing card */
+.card {
+  background: #1e1e2f;
+  padding: 30px 20px;
+  border-radius: 12px;
+  width: 280px;
+  box-shadow: 0 0 20px rgba(0,0,0,0.2);
+  transition: transform 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+}
+
+.card h3 {
+  font-size: 20px;
+  margin-bottom: 15px;
+}
+
+.card h1 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.card h1 span {
+  font-size: 16px;
+  color: #bbb;
+}
+
+/* List items */
+.card ul {
+  text-align: left;
+  margin-bottom: 20px;
+}
+
+.card ul li {
+  margin: 10px 0;
+  color: #f1f1f1;
+  /* position: relative; */
+  padding-left: 20px;
+}
+
+/* Button */
+.card button {
+  background: transparent;
+  border: 1px solid #ff5c33;
+  color: #ff5c33;
+  padding: 10px 20px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.card button:hover {
+  background: #ff5c33;
+  color: white;
+}
+
+  </style>
+</head>
+<body>
+  <section class="pricing-section">
+    <h2>Choose your plan</h2>
+    <div class="pricing-container">
+      
+      <!-- Starter Plan -->
+      <div class="card">
+        <h3>Starter</h3>
+        <h1>19$ <span>/ month</span></h1>
+        <ul>
+          <li>1 Website</li>
+          <li>10 GB Disk Space</li>
+          <li>Free Email Address</li>
+          <li>Basic Web Builder</li>
+          <li>No SSL Certificate</li>
+          <li>Limited Support</li>
+        </ul>
+        <button>Add To Cart</button>
+      </div>
+
+      <!-- Advanced Plan -->
+      <div class="card">
+        <h3>Advanced</h3>
+        <h1>29$ <span>/ month</span></h1>
+        <ul>
+          <li>10 Website</li>
+          <li>50 GB Disk Space</li>
+          <li>Free Email Address</li>
+          <li>Advanced Web Builder</li>
+          <li>Free SSL Certificate</li>
+          <li>Unlimited Support</li>
+        </ul>
+        <button>Add To Cart</button>
+      </div>
+
+      <!-- Premium Plan -->
+      <div class="card">
+        <h3>Premium</h3>
+        <h1>49$ <span>/ month</span></h1>
+        <ul>
+          <li>100 Website</li>
+          <li>100 GB Disk Space</li>
+          <li>Free Email Address</li>
+          <li>Advanced Web Builder</li>
+          <li>Free SSL Certificate</li>
+          <li>Unlimited Support</li>
+        </ul>
+        <button>Add To Cart</button>
+      </div>
+
+    </div>
+  </section>
+</body>
+</html>
