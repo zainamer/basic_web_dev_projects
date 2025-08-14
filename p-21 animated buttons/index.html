@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Animated Buttons</title>
+<style>
+    body {
+        background-color: black;
+        color: white;
+        font-family: Arial, sans-serif;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 40px;
+        gap: 20px;
+    }
+
+    .btn {
+        padding: 12px 24px;
+        font-size: 16px;
+        color: white;
+        border: 2px solid white;
+        background: transparent;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        border-radius: 5px;
+    }
+
+    /* 1. Glow */
+    .btn-glow:hover {
+        box-shadow: 0 0 15px white, 0 0 30px white;
+    }
+
+    /* 2. Scale Up */
+    .btn-scale:hover {
+        transform: scale(1.2);
+    }
+
+    /* 3. Rotate */
+    .btn-rotate:hover {
+        transform: rotate(360deg);
+    }
+
+    /* 4. Fill Background */
+    .btn-fill {
+        position: relative;
+        overflow: hidden;
+    }
+    .btn-fill::before {
+        content: "";
+        position: absolute;
+        top: 0; left: -100%;
+        width: 100%; height: 100%;
+        background: white;
+        transition: all 0.4s ease;
+        z-index: -1;
+    }
+    .btn-fill:hover {
+        color: black;
+    }
+    .btn-fill:hover::before {
+        left: 0;
+    }
+
+    /* 5. Border Grow */
+    .btn-border {
+        border: 2px solid white;
+    }
+    .btn-border:hover {
+        border-width: 4px;
+    }
+
+    /* 6. Slide Shadow */
+    .btn-shadow {
+        box-shadow: 0 0 0 white;
+    }
+    .btn-shadow:hover {
+        box-shadow: 5px 5px 0 white;
+        transform: translate(-5px, -5px);
+    }
+
+
+    /* 8. Text Glow */
+    .btn-text-glow:hover { text-shadow: 0 0 5px white, 0 0 10px white; }
+
+    /* 9. Letter Spacing */
+    .btn-spacing:hover { letter-spacing: 4px; }
+
+    /* 10. Underline Swipe */
+    .btn-underline::after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        height: 2px;
+        width: 0%;
+        background: white;
+        transition: width 0.3s;
+    }
+    .btn-underline:hover::after { width: 100%; }
+
+    
+
+    /* 12. Flip */
+    .btn-flip {
+        transform-style: preserve-3d;
+        transition: transform 0.5s;
+    }
+    .btn-flip:hover { transform: rotateY(180deg); }
+</style>
+</head>
+<body>
+
+<h1>Animated Buttons</h1>
+
+<button class="btn btn-glow">Glow Effect</button>
+<button class="btn btn-scale">Scale Up</button>
+<button class="btn btn-rotate">Rotate</button>
+<button class="btn btn-fill">Fill Background</button>
+<button class="btn btn-border">Border Grow</button>
+<button class="btn btn-shadow">Slide Shadow</button>
+
+
+<button class="btn btn-text-glow">Text Glow</button>
+<button class="btn btn-spacing">Letter Spacing</button>
+<button class="btn btn-underline">Underline Swipe</button>
+<button class="btn btn-flip">Flip Effect</button>
+
+</body>
+</html>
